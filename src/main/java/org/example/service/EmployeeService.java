@@ -7,8 +7,9 @@ import java.util.Optional;
 
 public interface EmployeeService  {
     List<Employee> findAll();
-
     Optional<Employee> findById(Long id);
-    Employee create(Employee employee);
+    void create(Employee employee);
+    void update(Employee employee);
+    void delete(Employee employee);
 
 }
