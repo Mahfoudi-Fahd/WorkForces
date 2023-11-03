@@ -11,9 +11,12 @@ public class Department{
         private Long id;
         private String name;
 
+
         public Department(Long id, String name) {
                 this.id = id;
                 this.name = name;
+        }
+        public Department() {
         }
 
         public Long getId() {
@@ -24,8 +27,7 @@ public class Department{
                 this.id = id;
         }
 
-        public Department() {
-        }
+
 
         public String getName() {
                 return name;

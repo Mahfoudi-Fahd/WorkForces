@@ -15,9 +15,10 @@ public class Main {
         EmployeeService employeeService = appContext.getBean("employeeService", EmployeeServiceImpl.class);
 
         Employee employee = new Employee();
-        employee.setName("John");
-        employee.setSalary(50000.0);
-//        employee.setDepartment();
+        Department department = new Department(1L,"IT");
+        employee.setName("FAHD");
+        employee.setSalary(20000.0);
+        employee.setDepartment(department);
 
         employeeService.create(employee);
         System.out.println(employeeService.findAll());
